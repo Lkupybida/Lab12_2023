@@ -1,4 +1,4 @@
-package org.example.task2;
+package org.example.secondtask;
 
 public class Main {
     public static void main(String[] args) {

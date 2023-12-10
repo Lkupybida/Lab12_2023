@@ -1,4 +1,4 @@
-package org.example.task1;
+package org.example.firsttask;
 
 public class ATM {
     private Tray firstTray;

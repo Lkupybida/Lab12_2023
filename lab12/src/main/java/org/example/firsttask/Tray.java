@@ -1,4 +1,4 @@
-package org.example.task1;
+package org.example.firsttask;
 
 public class Tray {
     private int denomination;
