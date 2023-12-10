@@ -1,11 +1,14 @@
 package org.example.task2;
 
 
-import java.util.UUID;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.function.Consumer;
 
 public class Signature<T> extends Task<T> {
-    public Consumer<T> consumer;
+    @Getter @Setter
+    private Consumer<T> consumer;
     public Signature(Consumer<T> consumer) {
         this.consumer = consumer;
     }

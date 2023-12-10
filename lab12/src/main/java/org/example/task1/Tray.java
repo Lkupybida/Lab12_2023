@@ -8,12 +8,12 @@ public class Tray {
         this.denomination = denomination;
     }
 
-    public Tray setNext(Tray tray){
+    public Tray setNext(Tray tray) {
         this.next = tray;
         return this;
     }
 
-    public void process (int amount) {
+    public void process(int amount) {
         if (next != null) {
             next.process(amount % denomination);
         }
@@ -22,7 +22,7 @@ public class Tray {
                     "We cannot output this sum unfortunately");
             System.exit(0);
         }
-        System.out.println ("You should take "
+        System.out.println("You should take "
                 + amount / denomination
                 + " of denomination " + denomination);
 

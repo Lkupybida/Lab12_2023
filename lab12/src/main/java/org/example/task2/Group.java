@@ -1,12 +1,16 @@
 package org.example.task2;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 
 public class Group<T> extends Task<T> {
-    public String groupUuid;
+    @Getter @Setter
+    private String groupUuid;
     private List<Task<T>> tasks;
 
     public Group<T> addTask(Task<T> task) {
